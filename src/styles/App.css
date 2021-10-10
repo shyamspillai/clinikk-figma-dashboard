@@ -1,0 +1,45 @@
+@import '~antd/dist/antd.css';
+@import '~react-circular-progressbar/dist/styles.css';
+
+#root {
+  background-color:#ffffff;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 20px 100px 20px 100px;
+}
+
+.user-courses-stat-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.main {
+  display: flex;
+  flex: 0.95;
+  flex-direction: column;  
+}
+
+@media only screen and (max-width: 400px) {
+  #root {
+    padding: 0;
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+  }
+
+  .main {
+    align-items: center;
+    flex: 1;
+    margin-top: 20px;
+  }
+
+  .hideable {
+    display: flex;
+    flex-direction: column !important;
+    align-items: center;
+  }
+  
+}
