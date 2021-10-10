@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/clinikk-figma-dashboard/static/css/main.ebaa8453.chunk.css",
+    "main.js": "/clinikk-figma-dashboard/static/js/main.e41b49fb.chunk.js",
+    "main.js.map": "/clinikk-figma-dashboard/static/js/main.e41b49fb.chunk.js.map",
+    "runtime-main.js": "/clinikk-figma-dashboard/static/js/runtime-main.b27607d7.js",
+    "runtime-main.js.map": "/clinikk-figma-dashboard/static/js/runtime-main.b27607d7.js.map",
+    "static/css/2.b68c8ca4.chunk.css": "/clinikk-figma-dashboard/static/css/2.b68c8ca4.chunk.css",
+    "static/js/2.fefd4bf3.chunk.js": "/clinikk-figma-dashboard/static/js/2.fefd4bf3.chunk.js",
+    "static/js/2.fefd4bf3.chunk.js.map": "/clinikk-figma-dashboard/static/js/2.fefd4bf3.chunk.js.map",
+    "index.html": "/clinikk-figma-dashboard/index.html",
+    "service-worker.js": "/clinikk-figma-dashboard/service-worker.js",
+    "service-worker.js.map": "/clinikk-figma-dashboard/service-worker.js.map",
+    "static/css/2.b68c8ca4.chunk.css.map": "/clinikk-figma-dashboard/static/css/2.b68c8ca4.chunk.css.map",
+    "static/css/main.ebaa8453.chunk.css.map": "/clinikk-figma-dashboard/static/css/main.ebaa8453.chunk.css.map",
+    "static/js/2.fefd4bf3.chunk.js.LICENSE.txt": "/clinikk-figma-dashboard/static/js/2.fefd4bf3.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.b27607d7.js",
+    "static/css/2.b68c8ca4.chunk.css",
+    "static/js/2.fefd4bf3.chunk.js",
+    "static/css/main.ebaa8453.chunk.css",
+    "static/js/main.e41b49fb.chunk.js"
+  ]
+}
