@@ -20,7 +20,7 @@ const HomeWellComponent = styled.div`
     display: flex;
     flex-direction: column;
 
-    @media only screen and (max-width: 400px) {
+    @media only screen and (max-width: 600px) {
         width: 300px !important;
         display: flex;
         margin-bottom: 30px;

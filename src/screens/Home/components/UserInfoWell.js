@@ -61,7 +61,7 @@ const UserInfoWellComponent = styled.div`
     flex-direction: column;
     justify-content: space-between;
 
-    @media only screen and (max-width: 400px) {
+    @media only screen and (max-width: 600px) {
         width: 300px !important;
         display: block;
     }

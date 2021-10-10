@@ -72,7 +72,7 @@ const LineChart = () => {
 
 const ChartContainer = styled.div`
     
-    @media only screen and (max-width: 400px) {
+    @media only screen and (max-width: 600px) {
         height: auto;
         width: 80vw;
     }

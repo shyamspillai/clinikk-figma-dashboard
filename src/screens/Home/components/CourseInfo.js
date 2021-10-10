@@ -32,7 +32,7 @@ const CourseInfo = ({title, author, rating, time, icon}) => {
 }
 
 const StyledAvatar = styled(Avatar)`
-    @media only screen and (max-width: 400px) {
+    @media only screen and (max-width: 600px) {
         height: 30;
         width: 30;
     }
@@ -49,7 +49,7 @@ const CourseInfoBar = styled.div`
     border-radius: 15px;
     margin-top: 20px;
 
-    @media only screen and (max-width: 400px) {
+    @media only screen and (max-width: 600px) {
         flex-wrap: wrap;
         width: 300px;
     }
@@ -68,13 +68,13 @@ const StyledCourseTitle = styled.span`
 `;
 
 const TimeIconHolder = styled.div`
-    @media only screen and (max-width: 400px) {
+    @media only screen and (max-width: 600px) {
         display: none;
     }
 `
 
 const RatingIconHolder = styled.div`
-    @media only screen and (max-width: 400px) {
+    @media only screen and (max-width: 600px) {
         display: none;
     }
 `

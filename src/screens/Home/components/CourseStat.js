@@ -22,7 +22,7 @@ const StatComponent = styled.div`
     padding: 15px 15px;
     border-radius: 15px;
 
-    @media only screen and (max-width: 400px) {
+    @media only screen and (max-width: 600px) {
         flex: 0.45
     }
 `;

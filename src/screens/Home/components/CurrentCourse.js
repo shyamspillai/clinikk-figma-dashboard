@@ -50,7 +50,7 @@ const CurrentCourse = () => {
 }
 
 const StyledAvatar = styled(Avatar)`
-    @media only screen and (max-width: 400px) {
+    @media only screen and (max-width: 600px) {
         height: 40px;
         width: 40px;
     }
@@ -66,7 +66,7 @@ const CurrentCourseBar = styled.div`
     align-items: center;
     border-radius: 15px;
 
-    @media only screen and (max-width: 400px) {
+    @media only screen and (max-width: 600px) {
         flex-wrap: wrap;
         width: 300px;
         margin-bottom: 20px;
@@ -78,7 +78,7 @@ const ToggleCourseBar = styled.div`
     display: flex;
     justify-content: space-around;
     align-items: center;
-    @media only screen and (max-width: 400px) {
+    @media only screen and (max-width: 600px) {
         width: 50%;
         justify-content: space-around;
     }
@@ -89,7 +89,7 @@ const CircularProgressContainer = styled.div`
     width: 50px;
     color: black;
 
-    @media only screen and (max-width: 400px) {
+    @media only screen and (max-width: 600px) {
         display: none;
     }
 `;

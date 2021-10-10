@@ -122,7 +122,7 @@ const StyledTopNavBar = styled.div`
     display: flex;
     justify-content: space-between;
     align-items: center;
-    @media only screen and (min-width: 400px) {
+    @media only screen and (min-width: 600px) {
         display: none;
     }
 `
@@ -143,7 +143,7 @@ const StyledSideBar = styled.nav`
     margin-right: 20px;
     flex: 0.02;
 
-    @media only screen and (max-width: 400px) {
+    @media only screen and (max-width: 600px) {
         display: none;
     }
 
