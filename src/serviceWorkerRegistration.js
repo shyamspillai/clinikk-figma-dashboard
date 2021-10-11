@@ -98,23 +98,30 @@ function registerValidSW(swUrl, config) {
                   'tabs for this page are closed. See https://cra.link/PWA.'
               );
 
-              // push notification
-              registration.pushManager.getSubscription()
-              .then((subscription) => {
-                console.log('Registering Push Notifications')
-                
-                registration.pushManager.subscribe({
-                userVisibleOnly: true,
-                applicationServerKey: convertedVapidKey
-                })
+              Notification.requestPermission().then((permission) => {
+                if (permission === 'granted') {
 
-                // show dummy push notification
-                registration.showNotification("Registered Push", {
-                  "body": "Registered push notifications!"
-                })
-              })
-              .catch((err) => {
-                  console.log("Error on registering push notification: ", err);
+                  // push notification
+                  registration.pushManager.getSubscription()
+                  .then((subscription) => {
+                    console.log('Registering Push Notifications')
+                    
+                    registration.pushManager.subscribe({
+                    userVisibleOnly: true,
+                    applicationServerKey: convertedVapidKey
+                    })
+
+                    // show dummy push notification
+                    registration.showNotification("Registered Push", {
+                      "body": "Registered push notifications!"
+                    })
+                  })
+                  .catch((err) => {
+                      console.log("Error on registering push notification: ", err);
+                  });
+                } else if (permission === 'denied') {
+                  console.log('Permission for Push Notifications denied');
+                }
               });
 
               // Execute callback
