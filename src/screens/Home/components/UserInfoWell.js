@@ -7,9 +7,7 @@ import styled from 'styled-components'
 const UserInfoWell = () => {
 
     function handleMenuClick(e) {
-        
         message.info('Click on menu item.');
-        console.log('click', e);
     }
         
     const menu = (

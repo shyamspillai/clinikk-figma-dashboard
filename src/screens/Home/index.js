@@ -64,13 +64,13 @@ const Home = () => {
                     <LineChart />
 
                     <SubscriptionBanner>
-                        <div style={{flex: 1}} class="column space-between">
+                        <div style={{flex: 1}} className="column space-between">
                             <span className="baloo size-24 weight-600">Learn even more!</span>
                             <span className="roboto size-16 weight-600">Unlock premium features only for $9.99 per month.</span>
                             <StyledButton>Go Premium</StyledButton>
                         </div>
 
-                        <SubscriptionIconColumn class="column">
+                        <SubscriptionIconColumn className="column">
                            <StyledBookOutlined />
                         </SubscriptionIconColumn>
                         

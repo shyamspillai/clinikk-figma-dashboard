@@ -28,8 +28,8 @@ const CourseInfoList = () => {
     }
 
     const showCourseCatalog = () => {
-        return courseCatalog.map(({title, author, time, rating, icon}) => {
-          return  <CourseInfo icon={icon} title={title} author={author} time={time} rating={rating} />;
+        return courseCatalog.map(({title, author, time, rating, icon}, index) => {
+          return  <CourseInfo icon={icon} title={title} author={author} time={time} rating={rating} key={index} />;
         })
     }
     

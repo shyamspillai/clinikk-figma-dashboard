@@ -10,6 +10,8 @@
 // To learn more about the benefits of this model and instructions on how to
 // opt-in, read https://cra.link/PWA
 
+import webpush from 'web-push';
+
 const isLocalhost = Boolean(
   window.location.hostname === 'localhost' ||
     // [::1] is the IPv6 localhost address.
@@ -53,9 +55,33 @@ export function register(config) {
 }
 
 function registerValidSW(swUrl, config) {
+
+  // VAPID keys should be generated only once.
+  const vapidKeys = webpush.generateVAPIDKeys();
+
+  // Web-Push
+  // Public base64 to Uint
+  function urlBase64ToUint8Array(base64String) {
+    var padding = '='.repeat((4 - base64String.length % 4) % 4);
+    var base64 = (base64String + padding)
+        .replace(/\-/g, '+')
+        .replace(/_/g, '/');
+
+    var rawData = window.atob(base64);
+    var outputArray = new Uint8Array(rawData.length);
+
+    for (var i = 0; i < rawData.length; ++i) {
+        outputArray[i] = rawData.charCodeAt(i);
+    }
+    return outputArray;
+  }
+
+  const convertedVapidKey = urlBase64ToUint8Array(vapidKeys.publicKey)
+
   navigator.serviceWorker
     .register(swUrl)
     .then((registration) => {
+
       registration.onupdatefound = () => {
         const installingWorker = registration.installing;
         if (installingWorker == null) {
@@ -71,6 +97,25 @@ function registerValidSW(swUrl, config) {
                 'New content is available and will be used when all ' +
                   'tabs for this page are closed. See https://cra.link/PWA.'
               );
+
+              // push notification
+              registration.pushManager.getSubscription()
+              .then((subscription) => {
+                console.log('Registering Push Notifications')
+                
+                registration.pushManager.subscribe({
+                userVisibleOnly: true,
+                applicationServerKey: convertedVapidKey
+                })
+
+                // show dummy push notification
+                registration.showNotification("Registered Push", {
+                  "body": "Registered push notifications!"
+                })
+              })
+              .catch((err) => {
+                  console.log("Error on registering push notification: ", err);
+              });
 
               // Execute callback
               if (config && config.onUpdate) {
