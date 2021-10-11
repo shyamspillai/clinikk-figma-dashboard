@@ -18,6 +18,13 @@ The app is running on demo here : https://shyamspillai.github.io/clinikk-figma-d
 * You need to install the node modules first ( `npm install` from step above )
 * Run `npm run test`
 
+## Project Specs
+
+* Commit convention - https://www.conventionalcommits.org/en/v1.0.0/
+* React JS - `17.0.2`
+* Node JS ( local ) - `10.23.0`
+* Tests - Jest & Enzyme
+
 ## Requirements Status
 | Requirement | Status | Comments  |
 |--|--|--|
