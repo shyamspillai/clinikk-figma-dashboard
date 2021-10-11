@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Course Stat component should match snapshot 1`] = `
+<styled.div>
+  <span
+    className="baloo size-60 weight-600 font-black"
+  />
+  <div
+    className="flex column"
+  >
+    <span
+      className="baloo size-16 weight-400 font-black"
+    />
+    <span
+      className="baloo size-16 weight-400 font-black"
+    />
+  </div>
+</styled.div>
+`;

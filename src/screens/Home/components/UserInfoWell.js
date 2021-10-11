@@ -1,4 +1,4 @@
-import { Badge, Input, Avatar, Space, Dropdown, message, Menu, Image } from 'antd'
+import { Badge, Input, Avatar, Dropdown, message, Menu, Image } from 'antd'
 import { SearchOutlined, BellOutlined, UserOutlined } from '@ant-design/icons'
 import CourseStat from './CourseStat'
 
@@ -9,17 +9,17 @@ const UserInfoWell = () => {
     function handleMenuClick(e) {
         message.info('Click on menu item.');
     }
-        
+
     const menu = (
         <Menu onClick={handleMenuClick}>
             <Menu.Item key="1" icon={<UserOutlined />}>
-            1st menu item
+                1st menu item
             </Menu.Item>
             <Menu.Item key="2" icon={<UserOutlined />}>
-            2nd menu item
+                2nd menu item
             </Menu.Item>
             <Menu.Item key="3" icon={<UserOutlined />}>
-            3rd menu item
+                3rd menu item
             </Menu.Item>
         </Menu>
     );
@@ -27,21 +27,21 @@ const UserInfoWell = () => {
     return (
         <UserInfoWellComponent>
             <UserSearchRow className="row">
-                    <StyledSearch size="large" placeholder="" bordered={false} prefix={<SearchOutlined />} />
-                    
-                    <Badge count={5}>
-                        <Avatar icon={<BellOutlined />} />
-                    </Badge>
+                <StyledSearch size="large" placeholder="" bordered={false} prefix={<SearchOutlined />} />
 
-                    <Dropdown.Button 
-                        overlay={menu}
-                        placement="bottomRight"
-                        size={"middle"}
-                        icon={
-                            <Image sizes={"small"} src="https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png" />
-                        }>
-                    </Dropdown.Button>
-                    
+                <Badge count={5}>
+                    <Avatar icon={<BellOutlined />} />
+                </Badge>
+
+                <Dropdown.Button
+                    overlay={menu}
+                    placement="bottomRight"
+                    size={"middle"}
+                    icon={
+                        <Image sizes={"small"} src="https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png" />
+                    }>
+                </Dropdown.Button>
+
             </UserSearchRow>
             <div className="row full-width user-courses-stat-container">
                 <CourseStat statNumber={5} statType={"Courses"} statStatus={"Completed"} />

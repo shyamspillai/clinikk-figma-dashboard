@@ -1,0 +1,99 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Course List component should match snapshot 1`] = `
+<Fragment>
+  <div
+    className="flex row"
+  >
+    <Space
+      size="large"
+    >
+      <styled.span
+        className="baloo weight-600 size-16"
+        data-test="catalog-0"
+        isActive={true}
+        key="0"
+        onClick={[Function]}
+      >
+        All Courses
+      </styled.span>
+      <styled.span
+        className="baloo weight-600 size-16"
+        data-test="catalog-1"
+        isActive={false}
+        key="1"
+        onClick={[Function]}
+      >
+        The Newest
+      </styled.span>
+      <styled.span
+        className="baloo weight-600 size-16"
+        data-test="catalog-2"
+        isActive={false}
+        key="2"
+        onClick={[Function]}
+      >
+        Top Rated
+      </styled.span>
+      <styled.span
+        className="baloo weight-600 size-16"
+        data-test="catalog-3"
+        isActive={false}
+        key="3"
+        onClick={[Function]}
+      >
+        Most Popular
+      </styled.span>
+    </Space>
+  </div>
+  <div
+    className="flex column"
+  >
+    <CourseInfo
+      author="Zora White"
+      data-test="course-0"
+      icon={<ForwardRef(RedditSquareFilled) />}
+      key="0"
+      rating="9.04"
+      time="3h 8min"
+      title="Learn Javascript"
+    />
+    <CourseInfo
+      author="Samir Rodriguez"
+      data-test="course-1"
+      icon={<ForwardRef(FacebookOutlined) />}
+      key="1"
+      rating="0.41"
+      time="2h 7min"
+      title="Learn Figma"
+    />
+    <CourseInfo
+      author="Ova Crona"
+      data-test="course-2"
+      icon={<ForwardRef(ChromeOutlined) />}
+      key="2"
+      rating="7.45"
+      time="1h 8min"
+      title="Learn Travel Writing"
+    />
+    <CourseInfo
+      author="Ivy Watsica"
+      data-test="course-3"
+      icon={<ForwardRef(TwitterOutlined) />}
+      key="3"
+      rating="7.45"
+      time="6h 7min"
+      title="Learn Skating"
+    />
+    <CourseInfo
+      author="Nya Kunde"
+      data-test="course-4"
+      icon={<ForwardRef(IeOutlined) />}
+      key="4"
+      rating="7.31"
+      time="1h 2min"
+      title="Learn Artifial Intelligence"
+    />
+  </div>
+</Fragment>
+`;

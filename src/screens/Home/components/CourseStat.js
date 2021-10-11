@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-const CourseStat = ({statNumber, statType, statStatus}) => {
+const CourseStat = ({ statNumber, statType, statStatus }) => {
     return (
         <StatComponent>
             <span className="baloo size-60 weight-600 font-black">{statNumber}</span>

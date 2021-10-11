@@ -23,7 +23,7 @@ const Home = () => {
             onClick={() => setStatCategoryIndex(index)}
             key={index}
             className="baloo weight-600 size-16">
-                {statCategory.title}
+            {statCategory.title}
         </TabLink>
         );
     }
@@ -32,16 +32,16 @@ const Home = () => {
         <section className="main full-width">
 
             <div className="row space-around flex-wrap hideable">
-                
-                <HomeWell/>
 
-                <UserInfoWell/>
+                <HomeWell />
+
+                <UserInfoWell />
 
             </div>
 
-            <div className="row space-around flex-wrap" style={{height: "100%", marginTop: "20px"}}>
-                
-                <div className="flex column" style={{flex: "0.5"}}>
+            <div className="row space-around flex-wrap" style={{ height: "100%", marginTop: "20px" }}>
+
+                <div className="flex column" style={{ flex: "0.5" }}>
 
                     <CurrentCourse></CurrentCourse>
 
@@ -51,10 +51,10 @@ const Home = () => {
 
                 </div>
 
-                <div className="flex column" style={{height: "100%", flex: "0.4", maxWidth: "525px"}}>
+                <div className="flex column" style={{ height: "100%", flex: "0.4", maxWidth: "525px" }}>
 
                     <StyledHeader className="baloo weight-600 size-24">Your statistics</StyledHeader>
-                    
+
                     <div className="flex row flex-wrap">
                         <Space size="large">
                             {showStatCategories()}
@@ -64,18 +64,18 @@ const Home = () => {
                     <LineChart />
 
                     <SubscriptionBanner>
-                        <div style={{flex: 1}} className="column space-between">
+                        <div style={{ flex: 1 }} className="column space-between">
                             <span className="baloo size-24 weight-600">Learn even more!</span>
                             <span className="roboto size-16 weight-600">Unlock premium features only for $9.99 per month.</span>
                             <StyledButton>Go Premium</StyledButton>
                         </div>
 
                         <SubscriptionIconColumn className="column">
-                           <StyledBookOutlined />
+                            <StyledBookOutlined />
                         </SubscriptionIconColumn>
-                        
-                    </SubscriptionBanner>              
-                    
+
+                    </SubscriptionBanner>
+
                 </div>
 
             </div>

@@ -9,7 +9,7 @@ const CurrentCourse = () => {
 
     return (
         <div className="row full-width space-between flex-wrap hideable">
-                    
+
             <CurrentCourseBar>
                 <StyledAvatar shape="square" size={50} icon={<UserOutlined />} />
                 <div className="flex column">
@@ -17,7 +17,7 @@ const CurrentCourse = () => {
                     <span className="roboto size-13 weight-400">by Alejandro Velazquez</span>
                 </div>
                 <CircularProgressContainer>
-                    <CircularProgressbar 
+                    <CircularProgressbar
                         styles={buildStyles({
                             // Colors
                             pathColor: `#000000`,
@@ -28,7 +28,7 @@ const CurrentCourse = () => {
                     />
                 </CircularProgressContainer>
 
-                <Button 
+                <Button
                     style={{
                         background: 'black',
                         borderRadius: "10px",
@@ -41,8 +41,8 @@ const CurrentCourse = () => {
             </CurrentCourseBar>
 
             <ToggleCourseBar>
-                <Button style={{border: "1px solid black"}} shape={"circle"} icon={<ArrowLeftOutlined />}></Button>
-                <Button style={{border: "1px solid black"}} shape={"circle"} icon={<ArrowRightOutlined />}></Button>
+                <Button style={{ border: "1px solid black" }} shape={"circle"} icon={<ArrowLeftOutlined />}></Button>
+                <Button style={{ border: "1px solid black" }} shape={"circle"} icon={<ArrowRightOutlined />}></Button>
             </ToggleCourseBar>
 
         </div>

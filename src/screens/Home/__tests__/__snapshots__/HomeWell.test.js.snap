@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Home Well should match snapshot 1`] = `
+<styled.div>
+  <span
+    className="baloo weight-600 size-60 font-black"
+  >
+    Hello Josh!
+  </span>
+  <span
+    className="roboto size-16 weight-400 font-black"
+  >
+    It's good to see you again
+  </span>
+</styled.div>
+`;

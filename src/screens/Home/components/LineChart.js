@@ -6,43 +6,43 @@ const LineChart = () => {
     const data = {
         labels: ['mon', 'tue', 'wed', 'thu', 'fri', 'sat', 'sun'],
         datasets: [
-          {
-            label: '',
-            data: [0, 1.5, 2, 2.5, 1, 2.5, 1],
-            fill: false,
-            borderColor: "#000000",
-            backgroundColor: "#000000",
-            pointBackgroundColor: "#000000",
-            pointBorderColor: "#000000",
-          },
+            {
+                label: '',
+                data: [0, 1.5, 2, 2.5, 1, 2.5, 1],
+                fill: false,
+                borderColor: "#000000",
+                backgroundColor: "#000000",
+                pointBackgroundColor: "#000000",
+                pointBorderColor: "#000000",
+            },
         ],
-      };
-      
-      const options = {
+    };
+
+    const options = {
         responsive: true,
         plugins: {
             legend: {
-              display: false
+                display: false
             },
             tooltip: {
                 callbacks: {
-                    label: function(context) {
-                        
+                    label: function (context) {
+
                         const { dataset, dataIndex } = context;
                         if (dataset.data) {
                             return dataset.data[dataIndex];
                         }
                     },
-                    labelColor: function(context) {
+                    labelColor: function (context) {
                         return false;
                     }
                 }
             }
-          },
+        },
         scales: {
             x: {
                 grid: {
-                  display: false
+                    display: false
                 }
             },
             y: {
@@ -61,7 +61,7 @@ const LineChart = () => {
                 backgroundColor: "#000000"
             }
         }
-      };
+    };
 
     return (
         <ChartContainer className="flex row flex-wrap">

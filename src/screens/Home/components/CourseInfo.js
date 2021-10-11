@@ -3,21 +3,33 @@ import { ClockCircleFilled, FireFilled } from '@ant-design/icons'
 
 import styled from 'styled-components'
 
-const CourseInfo = ({title, author, rating, time, icon}) => {
+const CourseInfo = ({ title, author, rating, time, icon }) => {
 
     return (
         <CourseInfoBar>
             <StyledAvatar shape="square" size={50} icon={icon} />
-            <div className="flex column" style={{width: "100px"}}>
-                <StyledCourseTitle className="baloo size-16 weight-600">{title}</StyledCourseTitle>
-                <StyledCourseAuthor className="roboto size-13 weight-400">by {author}</StyledCourseAuthor>
+            <div className="flex column" style={{ width: "100px" }}>
+                <StyledCourseTitle
+                    data-test="course-title"
+                    className="baloo size-16 weight-600">
+                    {title}
+                </StyledCourseTitle>
+                <StyledCourseAuthor
+                    data-test="course-author"
+                    className="roboto size-13 weight-400">
+                    by {author}
+                </StyledCourseAuthor>
             </div>
-            
-            <TimeIconHolder><ClockCircleFilled /><span> {time}</span></TimeIconHolder>
-            
-            <RatingIconHolder><FireFilled /> <span>{rating}</span></RatingIconHolder>
 
-            <Button 
+            <TimeIconHolder>
+                <ClockCircleFilled /><span data-test="course-time"> {time}</span>
+            </TimeIconHolder>
+
+            <RatingIconHolder>
+                <FireFilled /> <span data-test="course-rating">{rating}</span>
+            </RatingIconHolder>
+
+            <Button
                 style={{
                     border: '1px solid #000000',
                     borderRadius: "10px",

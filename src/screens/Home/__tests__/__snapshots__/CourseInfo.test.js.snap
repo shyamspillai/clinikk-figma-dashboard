@@ -1,0 +1,56 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Course Info component should match snapshot 1`] = `
+<styled.div>
+  <Styled(Avatar)
+    shape="square"
+    size={50}
+  />
+  <div
+    className="flex column"
+    style={
+      Object {
+        "width": "100px",
+      }
+    }
+  >
+    <styled.span
+      className="baloo size-16 weight-600"
+      data-test="course-title"
+    />
+    <styled.span
+      className="roboto size-13 weight-400"
+      data-test="course-author"
+    >
+      by 
+    </styled.span>
+  </div>
+  <styled.div>
+    <ForwardRef(ClockCircleFilled) />
+    <span
+      data-test="course-time"
+    >
+       
+    </span>
+  </styled.div>
+  <styled.div>
+    <ForwardRef(FireFilled) />
+     
+    <span
+      data-test="course-rating"
+    />
+  </styled.div>
+  <Button
+    className="roboto size-13 weight-700"
+    style={
+      Object {
+        "border": "1px solid #000000",
+        "borderRadius": "10px",
+        "color": "#000000",
+      }
+    }
+  >
+    Continue
+  </Button>
+</styled.div>
+`;
